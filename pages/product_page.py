@@ -6,7 +6,6 @@ class ProductPage(BasePage):
     def add_to_basket(self):
         add_to_bkt = self.browser.find_element(*ProductPageLocators.btn_add_to_bkt)
         add_to_bkt.click()
-        # self.solve_quiz_and_get_code()
 
     def should_be_add_item_alert(self):
         # Сначала проверяем, что элементы присутствуют на странице
